@@ -27,13 +27,14 @@ html {
 
 body {
     background-color: #000;
+    background-image: url(../images/stars.svg);
 }
 
 main {
     text-align: center;
 }
 
-.btn {
+/*.btn {
     text-decoration: none;
     color: #fff;
     margin: 1em;
@@ -107,3 +108,4 @@ main {
     left: calc(50% - 14px);
     bottom: calc(50% - 14px);
 }
+*/
