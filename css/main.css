@@ -37,13 +37,22 @@ main {
 .asteroid {
     height: 200px;
     width: 200px;
+    transition: 2s;
+}
+
+.asteroid:target {
+    transform: rotate(360deg);
 }
 
 .ship {
     height: 200px;
     width: 200px;
+    transition: 2s;
 }
 
+.ship:target {
+    transform: translate(100px, 50px);
+}
 
 /*
 
