@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+* {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+}
+
+html {
+        -moz-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+        
+        box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    background-color: #000;
+}
+
+main {
+    text-align: center;
+}
+
+.btn {
+    text-decoration: none;
+    color: #fff;
+    margin: 1em;
+}
+
+.btn-forward {
+    background-color: green;
+    display: inline-block;
+    width: 6em;
+    border-radius: 50%;
+    line-height: 6em;
+}
+
+.btn-backward {
+    background-color: red;
+    display: inline-block;
+    width: 6em;
+    border-radius: 50%;
+    line-height: 6em;
+}
+
+.btn-forward:hover {
+	background-color: white;
+	color: black;
+}
+
+.btn-backward:hover {
+	background-color: white;
+	color: black;
+}
+
+.clock-face {
+    height: 300px;
+    width: 300px;
+    background-image: url(../images/clock-face.svg);
+    background-color: #000;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.clock-face:target .hand-hour {
+    transform: rotate(360deg);
+}
+
+.clock-face:target .hand-minute {
+    transform: rotate(4340deg);
+}
+
+.hand-hour {
+    width: 14px;
+    position: absolute;
+    left: calc(50% - 7px);
+    bottom: calc(50% - 7px);
+    transition: 6s;
+    transform-origin: center bottom;
+}
+
+.hand-minute {
+    width: 14px;
+    position: absolute;
+    left: calc(50% - 7px);
+    bottom: calc(50% - 7px);
+    transition: 6s;
+    transform-origin: center bottom;
+}
+
+.center {
+    width: 28px;
+    position: absolute;
+    left: calc(50% - 14px);
+    bottom: calc(50% - 14px);
+}
