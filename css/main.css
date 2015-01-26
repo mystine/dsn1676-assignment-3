@@ -21,6 +21,24 @@ html {
         box-sizing: border-box;
 }
 
+@-webkit-keyframes ship {
+    0% { -webkit-transform: translateY(0) scale(1.05,1.05); }
+    20% { -webkit-transform: translateX(100px) rotate(-35deg) scale(2.05,2.05); }
+    40% { -webkit-transform: translateY(150px) scale(1.05,1.05); }
+    70% { -webkit-transform: translateX(200px) rotate(240deg); }
+    85% { -webkit-transform: translateY(300px); }
+    90% { -webkit-transform: translateX(-200px); 
+}
+
+@keyframes ship {
+    0% { transform: translateY(0) scale(1.05,1.05); }
+    20% { transform: translateX(100px) rotate(-35deg) scale(2.05,2.05); }
+    40% { transform: translateY(150px) scale(1.05,1.05); }
+     70% { transform: translateX(200px) rotate(240deg); }
+     85% { transform: translateY(300px); }
+     90% { transform: translateX(-200px); }
+    
+}
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -54,38 +72,5 @@ main {
     transform: translate(100px, 50px);
 }
 
-/*
 
-.clock-face:target .hand-hour {
-    transform: rotate(360deg);
-}
-
-.clock-face:target .hand-minute {
-    transform: rotate(4340deg);
-}
-
-.hand-hour {
-    width: 14px;
-    position: absolute;
-    left: calc(50% - 7px);
-    bottom: calc(50% - 7px);
-    transition: 6s;
-    transform-origin: center bottom;
-}
-
-.hand-minute {
-    width: 14px;
-    position: absolute;
-    left: calc(50% - 7px);
-    bottom: calc(50% - 7px);
-    transition: 6s;
-    transform-origin: center bottom;
-}
-
-.center {
-    width: 28px;
-    position: absolute;
-    left: calc(50% - 14px);
-    bottom: calc(50% - 14px);
-}
 */
