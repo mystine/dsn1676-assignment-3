@@ -21,25 +21,124 @@ html {
   box-sizing: inherit;
 }
 
-@-webkit-keyframes ship {
-    0% { -webkit-transform: translateY(0) scale(1.05,1.05); }
-    20% { -webkit-transform: translateX(100px) rotate(-35deg) scale(2.05,2.05); }
-    40% { -webkit-transform: translateY(150px) scale(1.05,1.05); }
-    70% { -webkit-transform: translateX(200px) rotate(240deg); }
-    85% { -webkit-transform: translateY(300px); }
-    90% { -webkit-transform: translateX(-200px);
-    100% { -webkit-transform: translateX(0) scale(0.5,0.5); }
+@-webkit-keyframes rock-rotate {
+    
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
 
-@keyframes space-ship {
-    0% { transform: translateY(0) scale(1.05,1.05); }
-    20% { transform: translateX(100px) rotate(-35deg) scale(2.05,2.05); }
-    40% { transform: translateY(150px) scale(1.05,1.05); }
-    70% { transform: translateX(200px) rotate(240deg); }
-    85% { transform: translateY(300px); }
-    90% { transform: translateX(-200px); }
-    100% { transform: translateX(0) scale(0.5,0.5); }
+@-webkit-keyframes star-scale {
+    
+    0% {
+        -webkit-transform: scale(1,1);
+    }
+    
+    100% {
+        -webkit-transform: scale(1.5,1.5);
+    }
 }
+
+@-webkit-keyframes ship-move {
+    
+    0% {
+        -webkit-transform: translateY(0px);
+    }
+    
+    20% {
+        -webkit-transform: translateY(10px);
+    }
+   
+    30% {
+        -webkit-transform: translateX(50px);
+    }
+    
+    40% {
+        -webkit-transform: translateY(20px);
+    }
+    
+    50% {
+        -webkit-transform: translateX(50px);
+    }
+    
+    60% {
+        -webkit-transform: translateY(70px);
+    }
+    
+    70% {
+        -webkit-transform: translateX(40px);
+    }
+    
+    80% {
+        -webkit-transform: translateX(20px);
+    }
+    
+    90% {
+        -webkit-transform: translateY(100px);
+    }
+    
+    100% {
+        -webkit-transform: translateX(20px);
+    }
+}
+
+@-webkit-keyframes star-scale {
+    
+    0% {
+        transform: scale(1,1);
+    }
+    
+    100% {
+        transform: scale(1.5,1.5);
+    }
+}
+
+@keyframes ship-move {
+    
+    0% {
+        transform: translateY(0px);
+    }
+    
+    20% {
+        transform: translateY(10px);
+    }
+   
+    30% {
+        transform: translateX(50px);
+    }
+    
+    40% {
+        transform: translateY(20px);
+    }
+    
+    50% {
+        transform: translateX(50px);
+    }
+
+    60% {
+        transform: translateY(70px);
+    }
+    
+    70% {
+        transform: translateX(40px);
+    }
+    
+    80% {
+        transform: translateX(20px);
+    }
+    
+    90% {
+        transform: translateY(100px);
+    }
+    
+    100% {
+        transform: translateX(20px);
+    }
+ 
 
 body {
     margin: 0;
@@ -70,7 +169,7 @@ div {
     left: 100px;
     width: 150px;
     height: 150px;
-    -webkit-animation: space-ship 10s ease-in-out infinite alternate;
+    -webkit-animation: rock-rotate 10s ease-in-out infinite alternate;
     animation: rock-rotate 10s ease-in-out infinite alternate;
 }
 
