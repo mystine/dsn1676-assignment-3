@@ -26,6 +26,10 @@ html {
     background-color: black;
 }
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 @-webkit-keyframes ship {
     0% { -webkit-transform: translateY(0) scale(1.05,1.05); }
     20% { -webkit-transform: translateX(100px) rotate(-35deg) scale(2.05,2.05); }
@@ -44,16 +48,18 @@ html {
      90% { transform: translateX(-200px); }
     
 }
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+
 
 body {
-    background-color: #000;
-    box-sizing: border-box;
-    display: block;
+    margin: 0;
+    padding: 0;
 }
 
+img {
+    display: block;
+    width: 100%;
+}
+    
 div {
     display: block;   
 }
