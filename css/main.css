@@ -140,6 +140,14 @@ div {
     height: 100%;
     position: absolute;
     -webkit-animation: star-scale 20s ease-in-out infinite alternate;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-fill-mode: none;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: star-scale;
+    -webkit-animation-play-state: running;
+    -webkit-animation-timing-function: ease-in-out;
 }
     
 .asteroid {
