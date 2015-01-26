@@ -15,6 +15,7 @@
 html {
     box-sizing: border-box;    
     background-color: black;
+
 }
 
 *, *:before, *:after {
@@ -26,7 +27,6 @@ html {
     0% {
         -webkit-transform: rotate(0deg);
     }
-    
     100% {
         -webkit-transform: rotate(360deg);
     }
@@ -37,7 +37,6 @@ html {
     0% {
         -webkit-transform: scale(1,1);
     }
-    
     100% {
         -webkit-transform: scale(1.5,1.5);
     }
@@ -48,39 +47,30 @@ html {
     0% {
         -webkit-transform: translateY(0px);
     }
-    
     20% {
         -webkit-transform: translateY(10px);
     }
-   
     30% {
         -webkit-transform: translateX(50px);
     }
-    
     40% {
         -webkit-transform: translateY(20px);
     }
-    
     50% {
         -webkit-transform: translateX(50px);
     }
-    
     60% {
         -webkit-transform: translateY(70px);
     }
-    
     70% {
         -webkit-transform: translateX(40px);
     }
-    
     80% {
         -webkit-transform: translateX(20px);
     }
-    
     90% {
         -webkit-transform: translateY(100px);
     }
-    
     100% {
         -webkit-transform: translateX(20px);
     }
@@ -91,7 +81,6 @@ html {
     0% {
         transform: scale(1,1);
     }
-    
     100% {
         transform: scale(1.5,1.5);
     }
@@ -102,44 +91,34 @@ html {
     0% {
         transform: translateY(0px);
     }
-    
     20% {
         transform: translateY(10px);
     }
-   
     30% {
         transform: translateX(50px);
     }
-    
     40% {
         transform: translateY(20px);
     }
-    
     50% {
         transform: translateX(50px);
     }
-
     60% {
         transform: translateY(70px);
     }
-    
     70% {
         transform: translateX(40px);
     }
-    
     80% {
         transform: translateX(20px);
     }
-    
     90% {
         transform: translateY(100px);
     }
-    
     100% {
         transform: translateX(20px);
     }
  
-
 body {
     margin: 0;
     padding: 0;
@@ -160,7 +139,6 @@ div {
     height: 100%;
     position: absolute;
     -webkit-animation: star-scale 20s ease-in-out infinite alternate;
-    animation: star-scale 20s ease-in-out infinite alternate;
 }
     
 .asteroid {
@@ -170,15 +148,13 @@ div {
     width: 150px;
     height: 150px;
     -webkit-animation: rock-rotate 10s ease-in-out infinite alternate;
-    animation: rock-rotate 10s ease-in-out infinite alternate;
 }
 
-.space-ship {
+.ship {
     width: 100px;
     height: 100px;
     position: absolute;
     left: 300px;
     top: 150px;
     -webkit-animation: ship-move 5s linear forwards;
-    animation: ship-move 5s linear forwards;
 }
