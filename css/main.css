@@ -45,6 +45,18 @@ html {
 
 body {
     background-color: #000;
+    box-sizing: border-box;
+    display: block;
+    height: 750px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    width: 704px;
 }
 
 div {
