@@ -30,7 +30,7 @@ html {
     90% { -webkit-transform: translateX(-200px); 
 }
 
-@keyframes ship {
+@keyframes space-ship {
     0% { transform: translateY(0) scale(1.05,1.05); }
     20% { transform: translateX(100px) rotate(-35deg) scale(2.05,2.05); }
     40% { transform: translateY(150px) scale(1.05,1.05); }
@@ -47,16 +47,6 @@ body {
     background-color: #000;
     box-sizing: border-box;
     display: block;
-    height: 750px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-    width: 704px;
 }
 
 div {
