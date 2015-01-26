@@ -45,12 +45,19 @@ html {
 
 body {
     background-color: #000;
-    background-image: url(../images/stars.svg);
-    width: 100%;
-    height: 100%;
-    -webkit-animation: stars 5s ease-in-out infinite;
 }
 
+div {
+    display: block;   
+}
+    
+.stars {
+    background-image: url(../images/stars.svg);
+    width: 100%;
+    height: 100vh;
+    -webkit-animation: stars 5s ease-in-out infinite;
+}
+    
 .asteroid {
     position: absolute;
     top: 120px;
