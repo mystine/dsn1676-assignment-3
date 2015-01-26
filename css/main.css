@@ -157,6 +157,16 @@ div {
     width: 150px;
     height: 150px;
     -webkit-animation: rock-rotate 10s ease-in-out infinite alternate;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-fill-mode: none;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: rock-rotate;
+    -webkit-animation-play-state: running;
+    -webkit-animation-timing-function: ease-in-out;
+    box-sizing: border-box;
+    display: block;
 }
 
 .ship {
