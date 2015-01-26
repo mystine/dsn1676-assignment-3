@@ -36,19 +36,19 @@ html {
     40% { -webkit-transform: translateY(150px) scale(1.05,1.05); }
     70% { -webkit-transform: translateX(200px) rotate(240deg); }
     85% { -webkit-transform: translateY(300px); }
-    90% { -webkit-transform: translateX(-200px); 
+    90% { -webkit-transform: translateX(-200px);
+    100% { -webkit-transform: translateX(0) scale(0.5,0.5); }
 }
 
 @keyframes space-ship {
     0% { transform: translateY(0) scale(1.05,1.05); }
     20% { transform: translateX(100px) rotate(-35deg) scale(2.05,2.05); }
     40% { transform: translateY(150px) scale(1.05,1.05); }
-     70% { transform: translateX(200px) rotate(240deg); }
-     85% { transform: translateY(300px); }
-     90% { transform: translateX(-200px); }
-    
+    70% { transform: translateX(200px) rotate(240deg); }
+    85% { transform: translateY(300px); }
+    90% { transform: translateX(-200px); }
+    100% { transform: translateX(0) scale(0.5,0.5); }
 }
-
 
 body {
     margin: 0;
