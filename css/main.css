@@ -56,6 +56,7 @@ div {
     width: 100%;
     height: 100vh;
     -webkit-animation: stars 5s ease-in-out infinite;
+    animation: stars 5s ease in out infinite;
 }
     
 .asteroid {
@@ -66,9 +67,10 @@ div {
     height: 256px;
     background-image: url(../images/asteroid.svg);
     -webkit-animation: asteroid 5s ease-in-out infinite alternate;
+    animation: asteroid 5s ease in out infinite alternate;
 }
 
-.ship {
+.space-ship {
     position: absolute;
     bottom: 200px;
     right: 150px;
@@ -76,4 +78,5 @@ div {
     height: 256px;
     background-image: url(../images/ship.svg);
     -webkit-animation: space-ship 5s ease-in-out infinite;
+    animation: space ship 5s ease in out infinite;
 }
